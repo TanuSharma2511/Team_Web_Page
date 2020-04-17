@@ -1,18 +1,15 @@
-import React , {useEffect , useState} from "react";
-import "./App.css";
-import {GlobalProvider} from"./context";
-import {Input} from "./Input";
+import React, { Component } from 'react';
+import { UserForm } from './components/UserForm';
+import {Link} from "react-router-dom";
 
-function App() {
-   return (
-     <GlobalProvider>
-       
-       <div className="container">
-         <Input />
-
-       </div>
-     </GlobalProvider>
-   );
- }
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <UserForm />
+      </div>
+    );
+  }
+}
 
 export default App;
