@@ -1,119 +1,437 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  text-decoration: none;
-  list-style: none;
-  font-family: 'Nunito', sans-serif;
-}
-
-body{
-  background: #dfdfdf;
-}
-
-.wrapper{
-  display: flex;
-  max-width: 560px;
-  width: 100%;
-  height: 350px;
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-
-.wrapper .left,
-.wrapper .right{
-  width: 50%;
-  height: 100%;
-  padding: 30px;
-}
-
-.wrapper .left{
-  background: #494f57;
-}
-
-.wrapper .left h3{
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fff;
-  font-size: 20px;
-}
-
-.wrapper .left img{
-  display: block;
-  width: 220px;
-  margin: 25px auto 0;
-}
-
-.wrapper .right{
-  background: #fff;
-}
-
-.wrapper .right .tabs ul{
-  text-align: center;
-}
-
-.wrapper .right .tabs ul li{
-  display: inline-block;
-  margin: 5px;
-  padding: 5px 10px;
-  font-size: 14px;
-  color: #494f57;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
-.wrapper .right .tabs ul li.active{
-  border-bottom: 2px solid #494f57;
-}
-
-.wrapper .right .register,
-.wrapper .right .login{
-  margin-top: 20px;
-}
-
-.wrapper .right .input_field{
-  margin-bottom: 15px;
-}
-
-.wrapper .right .input_field .input{
-  width: 100%;
-  padding: 10px 15px;
-  border: 0;
-  font-size: 12px;
-  background: #ecebeb;
-}
-
-.wrapper .right .btn{
-  margin-top: 20px;
-  background: #494f57;
-  padding: 7px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-}
-
-.wrapper .right button{
-  color: #fff;
-  display: block;
-  font-size: 14px;
-}
-.flex{
-  display:flex;
-  justify-content:space-between;
-}
-.list label{
-  font-size: 14px;
-  color:#494f57;
-}
-.listItem{
-  display: flex;
-  justify-content: space-between;
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  body{
+    background: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+ /* CSS FOR NAVBAR SECTION */
+  .wrapper1{
+    width: 100%;
+  }
+
+  .wrapper1 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    background: #ffffff;
+    height: 60px;
+  }
+  .wrapper .logo_section img{
+    height:30px;
+  }
+  .wrapper1 .menu{
+     margin-left: 190px;
+  }
+  
+  .wrapper1 .navbar .menu ul li, .right_align .menu ul li, .social_media ul li{
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .wrapper1 .navbar .menu ul li{
+    margin: 0 13px;
+  }
+  
+  .social_media ul{
+      margin-top: -10px;
+  }
+  .social_media ul li{
+      background:#1B2F3F;
+      height:40px;
+      width:40px;
+      border: rgb(185, 181, 181) solid 0.4px;
+      margin-left:-10px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      opacity:0.73;
+  }
+  .social_media ul li.first{
+      background:#0f1b24;
+      opacity:1;
+  }
+  .social_media ul li i{
+      font-size:16px;
+      margin-top:10px;
+      color:#ffffff
+  }
+  
+  .wrapper1 .navbar .menu ul li {
+    color: #1b2f3f;
+    letter-spacing: 1px;
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .wrapper1 .navbar .menu ul li.active{
+      color:#ffa33e;
+      box-shadow: inset 0px -1px #ffa33e;
+  }
+  .wrapper1 .navbar .menu ul li.active div{
+    color:#ffa33e;
+    height:20px;
+    width:30px;
 }
 
+/* CSS FOR HEADER SECTION */
+  
+  .wrapper h1{
+    margin-top:40px;
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+    color:#1B2F3F;
+    font-family: Montserrat;
+    font-weight: semi-bold;
+    letter-spacing: 0;
+  }
+  
+  .wrapper .para{
+    font-size: 14px;
+    font-family: opensans;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    color:#1B2F3F;
+  }
+
+  /* CSS FOR TEAM SECTION */
+  
+  .team{
+    display: flex;
+    margin: 70px;
+    justify-content: center;
+    
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .team .team_member{
+    background: #fff;
+    margin: 25px;
+    margin-bottom: 25px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;  
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+   
+  
+  .team .team_member h3{
+    color: #ffa33e;
+    font-size: 26px;
+    margin-top: 120px;
+  }
+  .team_member_modal .details{
+      font-family: "open-sans";
+      font-style: normal;
+      font-size:14px;
+      color:#1b2f3f;
+  }
+  
+  .team .team_member p.role,.team_member_modal p.role{
+    color: #394044;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "open-sans";
+    font-style: italic;
+  }
+  .team .team_member p.role2,.team_member_modal p.role2{
+    color: #394044;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "open-sans";
+    font-style: regular;
+  }
+  
+  .team .team_member .team_img{
+    position: absolute;
+    /* top: -50px; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+
+  /* CSS FOR MODAL SECTION */
+
+  .team_member_modal{
+    position: fixed;  
+    top:50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    margin: 25px;
+    margin-bottom: 25px;
+    width: 600px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    align-items: center;
+  }
+
+  .team_member_modal .right{
+      text-align: right;
+      font-size:30px;
+      cursor: pointer;
+  }
+
+  .team_member_modal .writing{
+    margin-top:-100px;
+}
+
+  .team_member_modal h3{
+    color: #ffa33e;
+    font-size: 26px;
+    margin-top: 120px;
+  }
+
+  .team_member_modal p.role{
+    color: #394044;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+   /* CSS FOR FOOTER SECTION */
+
+  .footer{
+       margin-top:50px;
+       width:100%;
+       height:60px;
+       background:#394044;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-around;
+   }
+   .footer2{
+       margin-top:-10px;
+    width:100%;
+    /* height:40px; */
+    background: #333332;
+    display: flex;
+    justify-content: space-around;
+}
+  .footer .left_align{
+      margin-top:10px;
+      margin-left:60px;
+  }
+  .footer .right_align{
+    margin-top:10px;
+}
+.footer .line{
+    font-size: 30px;
+    color:#ffa33e;
+    margin-left:40px;
+    font-weight:100;
+}
+.footer .right_align ul {
+    margin-right:100px;
+}
+.footer .right_align ul li{
+   color:white;
+   text-decoration: underline;
+   font-size:13px;
+   font-family: 'Open Sans';
+
+}
+.footer2 p{
+    color: #ffffff;
+    margin-top:10px;
+    font-size: 10px;
+    font-family:"Open Sans"
+}
+.menu-icon{
+    font-size:0px;
+   
+}
+
+
+/* 
+MEDIA QUERY CSS */
+
+@media only screen and (max-width: 1015px) {
+    .footer{
+        height:120px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer{
+        height:120px;
+        text-align: center;
+    }
+    .footer .line{
+        font-size: 0px;
+        color:#ffa33e;
+        margin-top:-20px;
+        font-weight:100;
+    }
+    .team_member_modal{
+        width:400px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .team_member_modal{
+        width:200px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .team_member_modal{
+        width:200px;
+    }
+    
+    .footer{
+        height:160px;
+        text-align: center;
+        align-items: center;
+    }
+    .footer .line{
+        font-size: 0px;
+        color:#ffa33e;
+        margin-top:-20px;
+        font-weight:100;
+    }
+    .footer .right_align .menu {
+        margin-left:150px;
+        margin-top: -20px;
+        text-align: center;
+    }
+    .footer .right_align ul {
+        margin-left:100px;
+        /* margin-top: -20px;
+        text-align: center; */
+    }
+    .footer .right_align ul li{
+        margin-right:-100px;
+        /* margin-top: -20px;
+        text-align: center; */
+    }
+    .footer2{
+        height:60px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 40px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #ffa33e;
+        padding-top:10px;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #7577fa;
+        border-radius: 0;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .fa-times {
+        color: black;
+        font-size: 2rem;
+    }
+    .wrapper1 .navbar .menu ul li{
+        margin-left: 60px;
+      }
+      .wrapper1 .navbar .menu ul li.active{
+        color: #fff;
+      }
+      .wrapper1 .navbar .menu ul li.active:hover{
+        color: #ffa33e;
+      }
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        margin-top:20px;
+        border-radius: 4px;
+        width: 80%;
+        background: #ffa33e;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:hover {
+        background: #fff;
+        color: #6568F4;
+        transition: 250ms;
+    }
+
+    Button {
+        display: none;
+    }
+}
